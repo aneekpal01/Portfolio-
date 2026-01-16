@@ -5,43 +5,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // ================================================
-    // Custom Cursor
-    // ================================================
-    const cursor = document.createElement('div');
-    cursor.classList.add('cursor');
-    const cursorDot = document.createElement('div');
-    cursorDot.classList.add('cursor-dot');
-    document.body.appendChild(cursor);
-    document.body.appendChild(cursorDot);
-
-    let mouseX = 0, mouseY = 0;
-    let cursorX = 0, cursorY = 0;
-
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        cursorDot.style.left = mouseX + 'px';
-        cursorDot.style.top = mouseY + 'px';
-    });
-
-    // Smooth cursor follow
-    function animateCursor() {
-        cursorX += (mouseX - cursorX) * 0.1;
-        cursorY += (mouseY - cursorY) * 0.1;
-        cursor.style.left = cursorX + 'px';
-        cursor.style.top = cursorY + 'px';
-        requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-
-    // Cursor hover effect on interactive elements
-    const hoverElements = document.querySelectorAll('a, button, .project-card, .glass-card');
-    hoverElements.forEach(el => {
-        el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-        el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-    });
-
-    // ================================================
     // Section Visibility
     // ================================================
     const sections = document.querySelectorAll('.section');
@@ -184,3 +147,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
