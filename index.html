@@ -1,1 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio showcasing projects, skills, and experience.">
+  <title>John Doe | Creative Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">JD.</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero section" id="home">
+    <div class="container">
+      <div class="hero-content reveal">
+        <span class="hero-badge">Available for Work</span>
+        <h1 class="hero-title">Hi, I'm <span class="highlight" id="typed-text"></span></h1>
+        <p class="hero-description">A passionate <strong>Full-Stack Developer</strong> & <strong>UI/UX Designer</strong> crafting beautiful digital experiences.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+          <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat-item"><span class="stat-number">50+</span><span class="stat-label">Projects Done</span></div>
+          <div class="stat-item"><span class="stat-number">30+</span><span class="stat-label">Happy Clients</span></div>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Profile" class="hero-avatar">
+          <div class="hero-image-ring"></div>
+        </div>
+        <div class="hero-floating-card"><span class="floating-icon">🎨</span><span>UI/UX Design</span></div>
+        <div class="hero-floating-card"><span class="floating-icon">💻</span><span>Web Development</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=700&fit=crop" alt="Workspace" class="about-img">
+        <div class="about-experience-badge"><span class="number">5+</span><span class="text">Years of<br>Experience</span></div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-label">About Me</span>
+        <h2>Turning Ideas Into <span class="gradient-text">Digital Reality</span></h2>
+        <p>I'm a creative developer based in San Francisco with a passion for building beautiful, functional digital experiences. With 5+ years of experience, I bring ideas to life through clean code and stunning visuals.</p>
+        <p>My expertise spans modern JavaScript frameworks, responsive design, and creating intuitive user interfaces. I believe in the power of design thinking and always put the user first.</p>
+        <div class="about-highlights">
+          <div class="highlight-item"><div class="highlight-icon">⚡</div><span class="highlight-text">Fast Delivery</span></div>
+          <div class="highlight-item"><div class="highlight-icon">🎯</div><span class="highlight-text">Pixel Perfect</span></div>
+          <div class="highlight-item"><div class="highlight-icon">🔒</div><span class="highlight-text">Secure Code</span></div>
+          <div class="highlight-item"><div class="highlight-icon">💬</div><span class="highlight-text">24/7 Support</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Tools and technologies I'm proficient with.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal">
+          <div class="skill-card-header"><div class="skill-icon">🎨</div><h3>Frontend</h3></div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">React / Next.js</span><span class="skill-percentage">95%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.95"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">TypeScript</span><span class="skill-percentage">90%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.90"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">CSS / Tailwind</span><span class="skill-percentage">92%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.92"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-card-header"><div class="skill-icon">⚙️</div><h3>Backend</h3></div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">Node.js / Express</span><span class="skill-percentage">88%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.88"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">Python / Django</span><span class="skill-percentage">82%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.82"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">PostgreSQL / MongoDB</span><span class="skill-percentage">85%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.85"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-card-header"><div class="skill-icon">🎯</div><h3>Tools</h3></div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">Figma / Adobe XD</span><span class="skill-percentage">90%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.90"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">Git / GitHub</span><span class="skill-percentage">93%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.93"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span class="skill-name">Docker / AWS</span><span class="skill-percentage">78%</span></div><div class="skill-bar"><div class="skill-progress" style="--progress: 0.78"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Recent projects showcasing my skills.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Dashboard">
+            <div class="project-overlay"><div class="project-links"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Node.js</span><span class="project-tag">MongoDB</span></div>
+            <h3 class="project-title">E-commerce Dashboard</h3>
+            <p class="project-description">Admin dashboard for managing stores with real-time analytics.</p>
+          </div>
+        </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Finance App">
+            <div class="project-overlay"><div class="project-links"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="project-tag">Next.js</span><span class="project-tag">TypeScript</span><span class="project-tag">Prisma</span></div>
+            <h3 class="project-title">Finance Tracker</h3>
+            <p class="project-description">Personal finance app with expense tracking and visual analytics.</p>
+          </div>
+        </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Code Editor">
+            <div class="project-overlay"><div class="project-links"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a><a href="#" class="project-link"><i class="fab fa-github"></i></a></div></div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags"><span class="project-tag">Vue.js</span><span class="project-tag">WebSocket</span><span class="project-tag">Docker</span></div>
+            <h3 class="project-title">Code Editor</h3>
+            <p class="project-description">Real-time collaborative code editor with syntax highlighting.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Career Path</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="experience-timeline">
+        <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content glass-card"><span class="timeline-date">2022 - Present</span><h3 class="timeline-title">Senior Full-Stack Developer</h3><p class="timeline-company">TechCorp Inc.</p><p class="timeline-description">Leading scalable web apps, mentoring developers, architecting cloud solutions.</p></div></div>
+        <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content glass-card"><span class="timeline-date">2020 - 2022</span><h3 class="timeline-title">Frontend Developer</h3><p class="timeline-company">Digital Agency XYZ</p><p class="timeline-description">Built responsive web apps, implemented UI/UX designs, optimized performance.</p></div></div>
+        <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-content glass-card"><span class="timeline-date">2019 - 2020</span><h3 class="timeline-title">Junior Web Developer</h3><p class="timeline-company">StartUp Hub</p><p class="timeline-description">Developed web applications, worked with cross-functional teams.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h2>Let's talk about <span class="gradient-text">your project</span></h2>
+          <p>Feel free to reach out. I typically respond within 24 hours.</p>
+          <div class="contact-details">
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-text"><h4>Email</h4><p>hello@johndoe.com</p></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div class="contact-text"><h4>Phone</h4><p>+1 (555) 123-4567</p></div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-text"><h4>Location</h4><p>San Francisco, CA</p></div></div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="John Smith" required></div>
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="john@example.com" required></div>
+          </div>
+          <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" placeholder="Project Inquiry"></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2026 John Doe. All rights reserved.</p>
+      <div class="footer-links"><a href="#" class="footer-link">Privacy</a><a href="#" class="footer-link">Terms</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
 
