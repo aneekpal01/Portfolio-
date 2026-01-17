@@ -1,12 +1,5 @@
-// ================================================
-// Premium Portfolio - JavaScript
-// ================================================
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ================================================
-    // Section Visibility
-    // ================================================
     const sections = document.querySelectorAll('.section');
     const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -15,12 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, { threshold: 0.1 });
-
     sections.forEach(section => sectionObserver.observe(section));
 
-    // ================================================
-    // Typing Animation
-    // ================================================
     const typedText = document.getElementById('typed-text');
     const words = ['Aneek Pal', 'a Web Developer', 'a UI/UX Designer', 'a Creator'];
     let wordIndex = 0;
@@ -29,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function type() {
         const current = words[wordIndex];
-
         if (isDeleting) {
             typedText.textContent = current.substring(0, charIndex - 1);
             charIndex--;
@@ -37,29 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
             typedText.textContent = current.substring(0, charIndex + 1);
             charIndex++;
         }
-
         if (!isDeleting && charIndex === current.length) {
             setTimeout(() => isDeleting = true, 2000);
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             wordIndex = (wordIndex + 1) % words.length;
         }
-
         setTimeout(type, isDeleting ? 50 : 100);
     }
     type();
 
-    // ================================================
-    // Navbar Scroll Effect
-    // ================================================
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // ================================================
-    // Mobile Menu Toggle
-    // ================================================
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
 
@@ -68,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.toggle('active');
     });
 
-    // Close menu on link click
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             navToggle.classList.remove('active');
@@ -76,9 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ================================================
-    // Scroll Reveal Animation
-    // ================================================
     const reveals = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -87,12 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, { threshold: 0.1 });
-
     reveals.forEach(el => revealObserver.observe(el));
 
-    // ================================================
-    // Skill Bar Animation
-    // ================================================
     const skillBars = document.querySelectorAll('.skill-progress');
     const skillObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -103,12 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, { threshold: 0.5 });
-
     skillBars.forEach(bar => skillObserver.observe(bar));
 
-    // ================================================
-    // Contact Form
-    // ================================================
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -122,9 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     });
 
-    // ================================================
-    // Smooth Scroll
-    // ================================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -135,16 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ================================================
-    // Page Load Complete
-    // ================================================
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
-        // Make first section visible immediately
         const heroSection = document.querySelector('.hero');
         if (heroSection) {
             heroSection.classList.add('visible');
         }
     });
 });
-
